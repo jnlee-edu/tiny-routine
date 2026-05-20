@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "DungGeunMo", "Press Start 2P", monospace;
+  --font-vt: "VT323", monospace;
+}
+
+body {
+  background-color: #E8E8E8;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-pixel);
+}
+
+/* Pixel art crisp edges */
+.pixelated {
+    image-rendering: pixelated;
+}
